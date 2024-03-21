@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hardware</title>
+    <link rel="icon" type="image/x-icon" href="imgs/hacker.png">
+    <link rel="stylesheet" href="file.css">
+</head>
+<body> 
+<div class="container">        
+    <div class="nav">
+        <center>
+            <div style="margin: 10px;">
+                <img src="imgs/hacker.png" alt="" width="50%">
+            </div>
+        </center> 
+        <div class="nav-links">
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                
+                <li class="active">
+                   <a href="products.html">Products</a> 
+                </li>
+                
+                <li>
+                    <a href="contacts.html">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="basket" id="basket">
+            <div class="badge" id ="badge">0</div>
+            <img src="imgs/126083.png" alt="" width="50">
+            
+        </div>
+        <div class="basket-body" id="basket-body">
+            <div class="close" id="close" onclick="closeBasket()">&times</div>
+            <h3 style="font-size: xx-large;">Basket</h3>
+            <div class="yourProducts" id="yourProducts">
+                
+            </div>
+        </div>
+        <center>
+            <div class="search-box">
+                <input class="search-input" id="search" type="text"> 
+                <button class="search-button" onclick="filterProduct()">
+                    Search
+                </button>
+            </div>
+        </center>
+        <div class="store">
+            <div class="filter-box">
+                <h3>
+                    Filters
+                </h3>
+                <hr>
+                <h4>
+                    Price :
+                </h4>
+                Min : <input id="minPrice" type="number" onkeyup="filterProduct()">
+                <br>
+                Max: <input id="maxPrice" type="number" onkeyup="filterProduct()" >
+                <hr>
+                <div class="tags">
+
+                </div>
+            </div>
+
+            <div class="products-box">
+                <div class="products" id="products">
+                    <!-- <div class="product">
+                        <img src="imgs/123456.jpg" alt="" style="width:100%">
+                        <h4>3090ti i7 14th 14900k</h4>
+                        <p class="price">$960.50</p>
+                        <p><button class="buy-button">Buy</button></p>
+                    </div> -->
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+</body>
+<script src="file.js"></script>
+</html>
